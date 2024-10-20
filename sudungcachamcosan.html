@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--bai1-->
+<!--<script>-->
+<!--  let myColor = ["red","green","white","black"];-->
+<!--  document.write(myColor+ "<br>");-->
+<!--  document.write(myColor.join('+'));-->
+<!--</script>-->
+<!--bai2-->
+<!--<script>-->
+<!--  let num=prompt("nhap so");-->
+<!--  let result=[num[0]];-->
+<!--  for (let i = 1; i <  num.length ; i++) {-->
+<!--    if (+num[i-1]%2===0 && +num[i]%2===0){-->
+<!--      result.push('-');-->
+<!--      result.push(num[i]);-->
+<!--    } else {-->
+<!--      result.push(num[i]);-->
+<!--    }-->
+<!--  }-->
+<!--  document.write(result.join(''));-->
+<!--</script>-->
+<!--bai 3-->
+<script>
+    let str=window.prompt("nhap chuoi");
+    let result="";
+    for (let i = 0; i < str.length; i++) {
+        let char=str[i];
+        if (char===char.toLowerCase()){
+            result+=char.toUpperCase();
+        } else {
+            result+=char.toLowerCase();
+        }
+    }
+    document.write(result);
+</script>
+</body>
+</html>

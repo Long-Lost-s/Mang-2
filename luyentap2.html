@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--bai1-->
+<script>
+    let a = [
+        [1, 2, 1, 24],
+        [8, 11, 9, 4],
+        [7, 0, 7, 27],
+        [7, 4, 28, 14],
+        [3, 10, 26, 7]
+    ];
+    for (let i in a) {
+        document.write("row " + i + "<br>");
+        for (let j in a[i]) {
+            document.write(a[i][j] + "" +"<br>");
+        }
+    }
+</script>
+<!--bai2-->
+<script>
+    let a=['c', 's', 'c', 1, 2, 6];
+    let reverse=[];
+    for (let i = a.length-1; i >=0 ; i--) {
+        reverse.push(a[i]);
+    }
+    document.write(reverse);
+</script>
+<!--bai3-->
+<script>
+    let exe=['1', '3', 'c', 'd', '4', 'a', '99', 'l', '11', 'v']
+    let count=0;
+    for (let i = 0; i < exe.length; i++) {
+        if (!isNaN(exe[i])){
+            count++;
+        }
+    }
+    document.write("so ki tu trong mang: "+ count);
+</script>
+<!--bai 4-->
+<script>
+let para=prompt("viet gi do di");
+let wordArray= para.trim().split(/\s+/);
+let wordcount= wordArray.length;
+document.write(wordcount);
+</script>
+<!--bai 5-->
+<script>
+    let a=prompt("viet nao");
+    let b=prompt("viet tiep nao");
+    if (a === b){
+        document.write("2 chuoi giong nhau");
+    } else {
+        document.write("2 chuoi khac nhau");
+    }
+</script>
+</body>
+</html>

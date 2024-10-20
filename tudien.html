@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhap tu:
+<input type="text" id="tienganh">
+<button onclick="dich()">Dịch</button>
+<p id="result"></p>
+<script>
+    let eng = ["bird", "fish", "cow", "chicken", "pig", "superman", "cat"];
+    let vie = ["chim", "ca", "bo", "ga", "heo", "sieu nhan", "cho"];
+    let string = document.getElementById("tienganh").value;
+    let index_eng = 0;
+    let result = "";
+    function dich() {
+        for (let i = 0; i <eng.length; i++) {
+            if (string == eng[i]) {
+                index_eng = i;
+                for (let j = 0; j <vie.length; j++) {
+                    if (index_eng == j) {
+                        result = vie[j];
+                    } else {
+                        alert("khong tim thay");
+                    }
+                }
+            }
+        }
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+</body>
+</html>

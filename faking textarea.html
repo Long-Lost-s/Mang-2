@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NGỐC CHƯA KÌA</title>
+</head>
+<body>
+<center>
+    <h2>Bạn có ngố không ?</h2>
+    <form name="f">
+        <textarea name="txt" cols="40" rows="10" onkeydown="typetextarea();"></textarea>
+    </form>
+</center>
+<script>
+    let a=new Array(), n="";
+    a[1]='A';
+    a[2]='I';
+    a[3]='M';
+    a[4]='O';
+    a[5]='I';
+    a[6]='L';
+    a[7]='A';
+    a[8]='N';
+    a[9]='G';
+    a[10]='O';
+    a[11]='C';
+    a[12]='?';
+    a[13]='?';
+    function typetextarea() {
+        t=document.f.txt.value;
+        j=t.length;
+        if (j>0){
+            for (let i = 1; i <=j ; i++) {
+                n=n+a[i];
+                if (i==13){
+                    document.f.txt.value="";
+                    n="";
+                }
+            }
+        }
+        document.f.txt.value=n;
+        n="";
+        setTimeout("typetextarea()", 1);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--bai1-->
+<!--<script>-->
+<!--    let num=[5, 8, 11, 10, 68, 4, 99, 134, 0, 1345]-->
+<!--    let result="";-->
+<!--    let count=0;-->
+<!--    for (let i = 0; i < num.length; i++) {-->
+<!--        if (num[i]>=10){-->
+<!--            count++;-->
+<!--            result+=`${num[i]} <br>`-->
+<!--        }-->
+<!--    }-->
+<!--    document.write(result + "so luong so lon hon 10: " + count);-->
+<!--</script>-->
+<!--bai2-->
+<!--<script>-->
+<!--    let num=[5, 8, 11, 10, 68, 4, 99, 4343, 134, 0, 1345]-->
+<!--    let index=0;-->
+<!--    let max=num[0];-->
+<!--    for (let i = 1; i < num.length; i++) {-->
+<!--        if (num[i]>max){-->
+<!--            max=num[i];-->
+<!--            index=i;-->
+<!--        }-->
+<!--    }-->
+<!--    document.write("so lon nhat: "+ max+" vi tri: "+index);-->
+<!--</script>-->
+<!--bai3-->
+<!--<script>-->
+<!--    let num=[5, 8, 11, 10, 68, 4, 99, 134, 0, 1345]-->
+<!--    let total=0-->
+<!--    let max=num[0];-->
+<!--    for (let i = 0; i < num.length; i++) {-->
+<!--        if (num[i]>max){-->
+<!--            max=num[i];-->
+<!--        }-->
+<!--        total+=num[i];-->
+<!--    }-->
+<!--    let ave=total/num.length;-->
+<!--    document.write("so lon nhat: "+ max);-->
+<!--    document.write("gia tri trung binh: "+ave);-->
+<!--</script>-->
+<!--bai4-->
+<!--<script>-->
+<!--    let num=[5, 8, 11, 10, 68, 4, 99, 134, 0, 1345]-->
+<!--    let reversenum=[];-->
+<!--    for (let i = num.length-1; i >=0 ; i&#45;&#45;) {-->
+<!--        reversenum.push(num[i]);-->
+<!--    }-->
+<!--    document.write(reversenum);-->
+<!--</script>-->
+<!--bai5-->
+<script>
+    let num=[-4, 7, -11, 19, 6, -5, 3, -96, -19];
+    let count=0;
+    for (let i = 0; i < num.length; i++) {
+        if (num[i]<0){
+            document.write(num[i] +"<br>");
+        } else {
+            document.write("khong phai so nguyen am" + "<br>");
+        }
+    }
+</script>
+<script>
+    let inputString=prompt("");
+    let negativeCount=countNegativeIntegers(inputString);
+    function countNegativeIntegers(input) {
+        const elements = input.split("");
+        let count=0;
+        for (let i = 0; i < elements.length; i++) {
+            const num= parseInt(elements[i]);
+            if (num<0 && !isNaN(num)){
+                count++;
+            }
+        }
+        return count;
+    }
+    document.write(negativeCount);
+</script>
+<!--bai6-->
+<!--<script>-->
+
+<!--</script>-->
+</body>
+</html>
