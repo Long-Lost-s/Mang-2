@@ -1,4 +1,4 @@
-let array=["hello", "hehe", "hi", "goodbye", "god", "peanut"];
+    let array=["hello", "hehe", "hi", "goodbye", "god", "peanut"];
 function play() {
     let value=document.getElementById("key").value;
     let result="";
